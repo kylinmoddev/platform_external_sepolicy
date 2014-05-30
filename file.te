@@ -12,6 +12,7 @@ type sysfs, fs_type, mlstrustedobject;
 type sysfs_writable, fs_type, sysfs_type, mlstrustedobject;
 type sysfs_bluetooth_writable, fs_type, sysfs_type, mlstrustedobject;
 type sysfs_nfc_power_writable, fs_type, sysfs_type, mlstrustedobject;
+type sysfs_wake_lock, fs_type, sysfs_type;
 type inotify, fs_type, mlstrustedobject;
 type devpts, fs_type, mlstrustedobject;
 type tmpfs, fs_type;
@@ -89,7 +90,7 @@ type security_file, file_type;
 # device policy
 type bluetooth_efs_file, file_type;
 # /sys/devices/system/cpu
-type sysfs_devices_system_cpu, file_type;
+type sysfs_devices_system_cpu, file_type, sysfs_type;
 
 # Socket types
 type adbd_socket, file_type;
